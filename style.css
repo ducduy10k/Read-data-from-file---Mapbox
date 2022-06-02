@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+#map {
+    width: 100%;
+    height: 100vh;
+}
+
+.left-panel {
+    position: absolute;
+    width: 300px;
+    height: calc(100vh - 2rem);
+    left: 1rem;
+    top: 1rem;
+    z-index: 10;
+    background-color: #fff;
+    transition:left  1s ease;
+}
+
+.right-panel {
+    position: absolute;
+    width: 300px;
+    max-height: calc(100vh - 2rem);
+    right: 1rem;
+    top: 1rem;
+    z-index: 10;
+    background-color: #fff;
+    height: 200px;
+    display: none;
+}
+
+.btn-open-leftpanel {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 9;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
