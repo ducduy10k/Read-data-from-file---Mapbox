@@ -13,19 +13,6 @@ function handleReadFile(event) {
   let file = document.getElementById("fileSelect").files[0];
   if (file) {
     let ext = getExtension(file.name);
-    if (ext === "geojson") {
-      readDataFromGeojsonFile(file);
-    }
-    if (ext === "kml") {
-      readDataFromKMLFile(file);
-    }
-    if (ext === "shp") {
-      readDataFromShpFile(file);
-    }
-    if (ext === "zip") {
-      readDataFromShpZipFile(file);
-    }
-
     switch (ext) {
       case "geojson":
         readDataFromGeojsonFile(file);
